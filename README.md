@@ -514,14 +514,14 @@ public class Bullet {
 功能：  
 
 函数构造飞镖子弹：public DartsBullet(int dbl_x, int dbl_y, int dbl_width, int dbl_height,
-			boolean isLife, GameStart gs)
-函数绘制飞镖子弹：public void drawBullet(Graphics g)
-函数控制子弹移动：public void dartsbulletMove()
-函数获取子弹模型：public Rectangle getDartsBulletSize()
-函数判断所有子弹是否与敌方小飞机相撞：public Rectangle getDartsBulletSize()
-函数判断所有子弹是否与敌方战机相撞：public void dbuEpIntersects(List<EnemyPlane> list)
-函数判断所有子弹是否与敌方战机相撞：public void dbuEcpIntersects(List<EnemyCombatPlane> list)
-函数判断所有子弹是否与Boss相撞：public void dbuBossIntersects(List<Boss> list)
+			boolean isLife, GameStart gs)  
+函数绘制飞镖子弹：public void drawBullet(Graphics g)  
+函数控制子弹移动：public void dartsbulletMove()  
+函数获取子弹模型：public Rectangle getDartsBulletSize()  
+函数判断所有子弹是否与敌方小飞机相撞：public Rectangle getDartsBulletSize()  
+函数判断所有子弹是否与敌方战机相撞：public void dbuEpIntersects(List<EnemyPlane> list)  
+函数判断所有子弹是否与敌方战机相撞：public void dbuEcpIntersects(List<EnemyCombatPlane> list)  
+函数判断所有子弹是否与Boss相撞：public void dbuBossIntersects(List<Boss> list)  
 ```java
 package com.J行天下.game;
 import java.awt.Graphics;
