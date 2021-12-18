@@ -27,6 +27,8 @@
 首先构建前端，以及各游戏窗体类，对象类（飞机，掉落物品，子弹），和gameover之后的结算类。其次各组在各自的框架上进行扩充，登录界面扩充注册、登录、设置（更换飞机贴图）按钮，游戏窗体界面扩充暂停，返回和重开按钮，各个对象设计移动规则和各自移动逻辑，结算界面扩充分数登记判定并显示。
 
 # 三、软件流程图
+总体流程图：  
+<img src="https://github.com/bi9potato/ProjectPracticeII_ThunderCross/blob/main/ScreenShoot/%E6%B5%81%E7%A8%8B%E5%9B%BE.png?raw=true" width="400" height="720" />
 
 主界面：							      
  <img src="https://github.com/bi9potato/ProjectPracticeII_ThunderCross/blob/main/ScreenShoot/%E4%B8%BB%E7%95%8C%E9%9D%A2.png?raw=true" width="400" height="720" />
