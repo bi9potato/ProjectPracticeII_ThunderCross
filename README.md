@@ -61,11 +61,12 @@
 音乐播放类：
 功能：  
 
-public void playSound(String mp3, Boolean isRuning)函数可循环播放一首歌，若读取下一首歌，会停止上一首歌的线程。Boolean参数控制是否允许播放。
-public void playSound(String mp3, Boolean isRuning)函数将音乐播放一遍就结束。Boolean参数控制是否允许播放。
+函数可循环播放一首歌，若读取下一首歌，会停止上一首歌的线程。Boolean参数控制是否允许播放：  
+public void playSound(String mp3, Boolean isRuning)
+函数将音乐播放一遍就结束。Boolean参数控制是否允许播放：  
+public void playSound(String mp3, Boolean isRuning)
 
 源码：  
-
 public class GameSound {
 	BgSoundThread bst = null;
 	// 播放背景音乐的代码
