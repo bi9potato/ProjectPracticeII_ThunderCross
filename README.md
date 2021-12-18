@@ -38,7 +38,8 @@
 
  <img src="https://github.com/bi9potato/ProjectPracticeII_ThunderCross/blob/main/ScreenShoot/%E8%AE%BE%E7%BD%AE%E7%95%8C%E9%9D%A2.png?raw=true" width="800" height="400" />
 
-登录成功弹窗：
+登录成功弹窗：  
+
  <img src="https://github.com/bi9potato/ProjectPracticeII_ThunderCross/blob/main/ScreenShoot/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E5%BC%B9%E7%AA%97.png?raw=true" width="400" height="720" />
 
 进入游戏界面：  
@@ -58,11 +59,13 @@
 我负责的是本机、战斗机，小飞机类，子弹类，音乐播放类，游戏机制设计。  
 
 音乐播放类：
-功能：
+功能：  
+
 public void playSound(String mp3, Boolean isRuning)函数可循环播放一首歌，若读取下一首歌，会停止上一首歌的线程。Boolean参数控制是否允许播放。
 public void playSound(String mp3, Boolean isRuning)函数将音乐播放一遍就结束。Boolean参数控制是否允许播放。
 
-源码：
+源码：  
+
 public class GameSound {
 	BgSoundThread bst = null;
 	// 播放背景音乐的代码
@@ -142,8 +145,8 @@ public class GameSound {
 	}
 }
 
-我的飞机类：
-功能：通过键盘WASD与SPACE案件控制飞机移动
+我的飞机类：  
+功能：通过键盘WASD与SPACE案件控制飞机移动  
 public void fire()函数控制单发子弹开火；
 public void doublefire()函数控制双发子弹开火；
 public void dartsfire()函数控制三发飞镖子弹开火；
@@ -154,12 +157,12 @@ public MyPlane(int mp_x, int mp_y, int mp_width, int mp_height,
 int mp_health,int doublefire_num,int dartsfire_num,int superfire_num,
 boolean isLife, GameStart gs)函数构造飞机；
 
-源码：
+源码：  
 package com.J行天下.game;
 import java.awt.Graphics;
 import java.awt.Rectangle;
 import java.awt.event.KeyEvent;
-
+  
 //我军飞机的类
 public class MyPlane {
 	
@@ -385,8 +388,8 @@ boolean isLife, GameStart gs) {
 	}
 }
 
-普通子弹类：
-功能：
+普通子弹类：  
+功能：  
 public Bullet(int bl_x, int bl_y, int bl_width, int bl_height, boolean isLife, GameStart gs)函数构造子弹；
 public void drawBullet(Graphics g)函数绘制子弹；
 public void bulletMove()函数控制子弹移动；
@@ -395,7 +398,7 @@ public void buEpIntersects(List<EnemyPlane> list)函数判断所有子弹是否�
 public void buEcpIntersects(List<EnemyCombatPlane> list)函数判断所有子弹是否与敌方战机相撞；
 public void buBossIntersects(List<Boss> list)函数判断所有子弹是否与Boss相撞；
 
-源码：
+源码：  
 package com.J行天下.game;
 import java.awt.Graphics;
 import java.awt.Rectangle;
@@ -496,8 +499,8 @@ public class Bullet {
 	}
 }
 
-飞镖子弹类：
-功能：
+飞镖子弹类：  
+功能：  
 public DartsBullet(int dbl_x, int dbl_y, int dbl_width, int dbl_height,
 			boolean isLife, GameStart gs)函数构造飞镖子弹
 public void drawBullet(Graphics g)函数绘制飞镖子弹
@@ -599,8 +602,8 @@ public class DartsBullet {
 	}
 }
 
-# 五、总结
-项目总结：
+# 五、总结  
+项目总结：  
 实训培养了我的综合运用所学知识,发现,提出,分析和解决实际问题,锻炼实践能力的重要环节,是对学生实际工作能力的具体训练和考察过程.。
 这次课程设计终于顺利完成了,在设计中遇到了很多编程问题,最后在组员的齐心协力与互相帮助下,终于迎刃而解。在此我表示感谢!同时,对给过我帮劣的所有同学和各位指导老师再次表示忠心的感谢! 
 心得体会：
