@@ -399,13 +399,13 @@ boolean isLife, GameStart gs) {
 
 普通子弹类：  
 功能：  
-public Bullet(int bl_x, int bl_y, int bl_width, int bl_height, boolean isLife, GameStart gs)函数构造子弹；
-public void drawBullet(Graphics g)函数绘制子弹；
-public void bulletMove()函数控制子弹移动；
-public Rectangle getBulletSize()函数获取子弹模型；
-public void buEpIntersects(List<EnemyPlane> list)函数判断所有子弹是否与敌方小飞机相撞；
-public void buEcpIntersects(List<EnemyCombatPlane> list)函数判断所有子弹是否与敌方战机相撞；
-public void buBossIntersects(List<Boss> list)函数判断所有子弹是否与Boss相撞；
+函数构造子弹：public Bullet(int bl_x, int bl_y, int bl_width, int bl_height, boolean isLife, GameStart gs)；  
+函数绘制子弹：public void drawBullet(Graphics g)；  
+函数控制子弹移动：public void bulletMove()；  
+函数获取子弹模型：public Rectangle getBulletSize()；  
+函数判断所有子弹是否与敌方小飞机相撞：public void buEpIntersects(List<EnemyPlane> list)；  
+函数判断所有子弹是否与敌方战机相撞：public void buEcpIntersects(List<EnemyCombatPlane> list)；  
+函数判断所有子弹是否与Boss相撞：public void buBossIntersects(List<Boss> list)；  
 
 源码：  
 ```java
@@ -512,17 +512,17 @@ public class Bullet {
 	
 飞镖子弹类：  
 功能：  
-```java
-public DartsBullet(int dbl_x, int dbl_y, int dbl_width, int dbl_height,
-			boolean isLife, GameStart gs)函数构造飞镖子弹
-public void drawBullet(Graphics g)函数绘制飞镖子弹
-public void dartsbulletMove()函数控制子弹移动
-public Rectangle getDartsBulletSize()函数获取子弹模型
-public Rectangle getDartsBulletSize()函数判断所有子弹是否与敌方小飞机相撞
-public void dbuEpIntersects(List<EnemyPlane> list)函数判断所有子弹是否与敌方战机相撞
-public void dbuEcpIntersects(List<EnemyCombatPlane> list)函数判断所有子弹是否与敌方战机相撞
-public void dbuBossIntersects(List<Boss> list)函数判断所有子弹是否与Boss相撞
 
+函数构造飞镖子弹：public DartsBullet(int dbl_x, int dbl_y, int dbl_width, int dbl_height,
+			boolean isLife, GameStart gs)
+函数绘制飞镖子弹：public void drawBullet(Graphics g)
+函数控制子弹移动：public void dartsbulletMove()
+函数获取子弹模型：public Rectangle getDartsBulletSize()
+函数判断所有子弹是否与敌方小飞机相撞：public Rectangle getDartsBulletSize()
+函数判断所有子弹是否与敌方战机相撞：public void dbuEpIntersects(List<EnemyPlane> list)
+函数判断所有子弹是否与敌方战机相撞：public void dbuEcpIntersects(List<EnemyCombatPlane> list)
+函数判断所有子弹是否与Boss相撞：public void dbuBossIntersects(List<Boss> list)
+```java
 package com.J行天下.game;
 import java.awt.Graphics;
 import java.awt.Rectangle;
