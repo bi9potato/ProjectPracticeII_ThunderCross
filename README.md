@@ -28,7 +28,7 @@
 
 # 三、软件流程图
 总体流程图：  
-<img src="https://github.com/bi9potato/ProjectPracticeII_ThunderCross/blob/main/ScreenShoot/%E6%B5%81%E7%A8%8B%E5%9B%BE.png?raw=true" width="400" height="720" />
+<img src="https://github.com/bi9potato/ProjectPracticeII_ThunderCross/blob/main/ScreenShoot/%E6%B5%81%E7%A8%8B%E5%9B%BE.png?raw=true" width="500" height="500" />
 
 主界面：							      
  <img src="https://github.com/bi9potato/ProjectPracticeII_ThunderCross/blob/main/ScreenShoot/%E4%B8%BB%E7%95%8C%E9%9D%A2.png?raw=true" width="400" height="720" />
