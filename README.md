@@ -157,15 +157,15 @@ public class GameSound {
 
 ## 4.2 我的飞机类：  
 >功能：通过键盘WASD与SPACE案件控制飞机移动  
->>函数控制单发子弹开火: ```java public void fire()  ```  
->>函数控制双发子弹开火: public void doublefire()；  
->>函数控制三发飞镖子弹开火: public void dartsfire()；  
->>函数控制大招发动: public void superfire()；  
->>函数控制本机移动: public void mpMove()；  
->>绘制飞机: public void drawMyPlane(Graphics g)；  
->>函数构造飞机: public MyPlane(int mp_x, int mp_y, int mp_width, int mp_height,
+>>1. 函数控制单发子弹开火: ```java public void fire()  ```  
+>>2. 函数控制双发子弹开火: ```java public void doublefire()   ```  
+>>3. 函数控制三发飞镖子弹开火: ```java public void dartsfire()    ```  
+>>4. 函数控制大招发动: ```java public void superfire()   ```  
+>>5. 函数控制本机移动: ```java public void mpMove()  ```  
+>>6. 绘制飞机: ```java public void drawMyPlane(Graphics g)   ```  
+>>7. 函数构造飞机: ```java public MyPlane(int mp_x, int mp_y, int mp_width, int mp_height,
 int mp_health,int doublefire_num,int dartsfire_num,int superfire_num,
-boolean isLife, GameStart gs)；
+boolean isLife, GameStart gs)  ```  
 
 源码：  
 ```java
@@ -401,14 +401,14 @@ boolean isLife, GameStart gs) {
 ```
 
 ## 4.3 普通子弹类：  
-功能：  
-函数构造子弹：public Bullet(int bl_x, int bl_y, int bl_width, int bl_height, boolean isLife, GameStart gs)；  
-函数绘制子弹：public void drawBullet(Graphics g)；  
-函数控制子弹移动：public void bulletMove()；  
-函数获取子弹模型：public Rectangle getBulletSize()；  
-函数判断所有子弹是否与敌方小飞机相撞：public void buEpIntersects(List<EnemyPlane> list)；  
-函数判断所有子弹是否与敌方战机相撞：public void buEcpIntersects(List<EnemyCombatPlane> list)；  
-函数判断所有子弹是否与Boss相撞：public void buBossIntersects(List<Boss> list)；  
+>功能：  
+>>1. 函数构造子弹：```java public Bullet(int bl_x, int bl_y, int bl_width, int bl_height, boolean isLife, GameStart gs)  ```  
+>>2. 函数绘制子弹：```java public void drawBullet(Graphics g)    ```  
+>>3. 函数控制子弹移动：```java public void bulletMove()   ```  
+>>4. 函数获取子弹模型：```java public Rectangle getBulletSize()   ```  
+>>5. 函数判断所有子弹是否与敌方小飞机相撞：```java public void buEpIntersects(List<EnemyPlane> list)    ```  
+>>6. 函数判断所有子弹是否与敌方战机相撞：```java public void buEcpIntersects(List<EnemyCombatPlane> list)    ```  
+>>7. 函数判断所有子弹是否与Boss相撞：```java public void buBossIntersects(List<Boss> list)    ```  
 
 源码：  
 ```java
@@ -514,17 +514,16 @@ public class Bullet {
 ```
 	
 ## 4.4 飞镖子弹类：  
-功能：  
-
-函数构造飞镖子弹：public DartsBullet(int dbl_x, int dbl_y, int dbl_width, int dbl_height,
-			boolean isLife, GameStart gs)  
-函数绘制飞镖子弹：public void drawBullet(Graphics g)  
-函数控制子弹移动：public void dartsbulletMove()  
-函数获取子弹模型：public Rectangle getDartsBulletSize()  
-函数判断所有子弹是否与敌方小飞机相撞：public Rectangle getDartsBulletSize()  
-函数判断所有子弹是否与敌方战机相撞：public void dbuEpIntersects(List<EnemyPlane> list)  
-函数判断所有子弹是否与敌方战机相撞：public void dbuEcpIntersects(List<EnemyCombatPlane> list)  
-函数判断所有子弹是否与Boss相撞：public void dbuBossIntersects(List<Boss> list)  
+>功能：  
+>>1. 函数构造飞镖子弹：```java public DartsBullet(int dbl_x, int dbl_y, int dbl_width, int dbl_height,
+			boolean isLife, GameStart gs)    ```  
+>>2. 函数绘制飞镖子弹：```java public void drawBullet(Graphics g)    ```  
+>>3. 函数控制子弹移动：```java public void dartsbulletMove()    ```  
+>>4. 函数获取子弹模型：```java public Rectangle getDartsBulletSize()    ```  
+>>5. 函数判断所有子弹是否与敌方小飞机相撞：```java public Rectangle getDartsBulletSize()    ```  
+>>6. 函数判断所有子弹是否与敌方战机相撞：```java public void dbuEpIntersects(List<EnemyPlane> list)    ```  
+>>7. 函数判断所有子弹是否与敌方战机相撞：```java public void dbuEcpIntersects(List<EnemyCombatPlane> list)    ```  
+>>8. 函数判断所有子弹是否与Boss相撞：```java public void dbuBossIntersects(List<Boss> list)    ```  
 ```java
 package com.J行天下.game;
 import java.awt.Graphics;
