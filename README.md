@@ -71,6 +71,7 @@ public void playSound(String mp3, Boolean isRuning)
 ```
 
 源码：  
+```Java
 public class GameSound {
 	BgSoundThread bst = null;
 	// 播放背景音乐的代码
@@ -149,20 +150,22 @@ public class GameSound {
 		}
 	}
 }
+```  
 
 我的飞机类：  
 功能：通过键盘WASD与SPACE案件控制飞机移动  
-public void fire()函数控制单发子弹开火；
-public void doublefire()函数控制双发子弹开火；
-public void dartsfire()函数控制三发飞镖子弹开火；
-public void superfire()函数控制大招发动；
-public void mpMove()函数控制本机移动；
-public void drawMyPlane(Graphics g)绘制飞机；
-public MyPlane(int mp_x, int mp_y, int mp_width, int mp_height,
+函数控制单发子弹开火: public void fire()  
+函数控制双发子弹开火: public void doublefire()；  
+函数控制三发飞镖子弹开火: public void dartsfire()；  
+函数控制大招发动: public void superfire()；  
+函数控制本机移动: public void mpMove()；  
+绘制飞机: public void drawMyPlane(Graphics g)；  
+函数构造飞机: public MyPlane(int mp_x, int mp_y, int mp_width, int mp_height,
 int mp_health,int doublefire_num,int dartsfire_num,int superfire_num,
-boolean isLife, GameStart gs)函数构造飞机；
+boolean isLife, GameStart gs)；
 
 源码：  
+```java
 package com.J行天下.game;
 import java.awt.Graphics;
 import java.awt.Rectangle;
@@ -392,6 +395,7 @@ boolean isLife, GameStart gs) {
 		return rtg;
 	}
 }
+```
 
 普通子弹类：  
 功能：  
@@ -404,6 +408,7 @@ public void buEcpIntersects(List<EnemyCombatPlane> list)函数判断所有子弹
 public void buBossIntersects(List<Boss> list)函数判断所有子弹是否与Boss相撞；
 
 源码：  
+```java
 package com.J行天下.game;
 import java.awt.Graphics;
 import java.awt.Rectangle;
@@ -503,9 +508,11 @@ public class Bullet {
 		}
 	}
 }
-
+```
+	
 飞镖子弹类：  
 功能：  
+```java
 public DartsBullet(int dbl_x, int dbl_y, int dbl_width, int dbl_height,
 			boolean isLife, GameStart gs)函数构造飞镖子弹
 public void drawBullet(Graphics g)函数绘制飞镖子弹
@@ -606,12 +613,13 @@ public class DartsBullet {
 		}
 	}
 }
-
+```
+	
 # 五、总结  
 项目总结：  
-实训培养了我的综合运用所学知识,发现,提出,分析和解决实际问题,锻炼实践能力的重要环节,是对学生实际工作能力的具体训练和考察过程.。
+	实训培养了我的综合运用所学知识,发现,提出,分析和解决实际问题,锻炼实践能力的重要环节,是对学生实际工作能力的具体训练和考察过程.。
 这次课程设计终于顺利完成了,在设计中遇到了很多编程问题,最后在组员的齐心协力与互相帮助下,终于迎刃而解。在此我表示感谢!同时,对给过我帮劣的所有同学和各位指导老师再次表示忠心的感谢! 
-心得体会：
-回想起实训,至今我仍感慨颇多,的确,在这两周的日子里,可以说得是苦多于甜,但是可以学到很多很多的东西,同时不仅可以巩固了以前所学过的知识,比如类的继承，线程的构造与运行逻辑，如何在JPannel上绘制图片，图片碰撞检测等，更深刻的理解JAVA中封装特性与“一切皆对象”的含义，学到了很多在书本上所没有学到过的知识。通过这次课程设计使我懂得了理论不实际相结合是很重要的,只有理论知识是远远不够的,只有把所学的理论知识不实践相结合起来,从理论中得出结论,从而提高自己的实际劢手能力和独立思考的能力，例如在处理界面切换并且切换音乐的问题上，我想到模仿在操作系统中学到的“锁”的原理，即在不同页面做上flag=0，切换页面后当前页面的flag置1并判断页面的标志是否为1，为1则播放bgm，且将其他页面的flag清零。后来发现bgm播放函数在无限循环，只要一次进入当前页面flag就会置1后，判断为1就会重启这个音乐，故音乐只会循环播放当前的sleep空挡中的几秒。将flag=1改为flag++就可解决此问题。
-此外我还参与了小飞机和战斗机的移动逻辑制作，我一开始设计小飞机移动前会判断与我的飞机横向距离是否相等，相等就撞过来，后来发现没有意义，因为正常飞机为不被集中或是为了吃到掉落物品不得不保持一直移动，就算与小飞机横坐标相等也只能保持一瞬间，甚至小于paint的刷新频率，因此小飞机几乎不会向前冲，后将小飞机移动前会判断与我的飞机横向距离的绝对值是否小于25，小于25就会向我方飞机冲过来撞击我们，但也发现小飞机被打一下就死，冲过来没有意义，于是增加小飞机血量参数，血量为2，发现游戏难度极大提升。战斗机的移动逻辑是会检测我们的位置，并向我们的位置移动，直至与我们横向坐标相等，这样条件有点苛刻，日后可能会优化成移动到我们位置的左右的随机位置。
+心得体会：  
+	回想起实训,至今我仍感慨颇多,的确,在这两周的日子里,可以说得是苦多于甜,但是可以学到很多很多的东西,同时不仅可以巩固了以前所学过的知识,比如类的继承，线程的构造与运行逻辑，如何在JPannel上绘制图片，图片碰撞检测等，更深刻的理解JAVA中封装特性与“一切皆对象”的含义，学到了很多在书本上所没有学到过的知识。通过这次课程设计使我懂得了理论不实际相结合是很重要的,只有理论知识是远远不够的,只有把所学的理论知识不实践相结合起来,从理论中得出结论,从而提高自己的实际劢手能力和独立思考的能力，例如在处理界面切换并且切换音乐的问题上，我想到模仿在操作系统中学到的“锁”的原理，即在不同页面做上flag=0，切换页面后当前页面的flag置1并判断页面的标志是否为1，为1则播放bgm，且将其他页面的flag清零。后来发现bgm播放函数在无限循环，只要一次进入当前页面flag就会置1后，判断为1就会重启这个音乐，故音乐只会循环播放当前的sleep空挡中的几秒。将flag=1改为flag++就可解决此问题。  
+	此外我还参与了小飞机和战斗机的移动逻辑制作，我一开始设计小飞机移动前会判断与我的飞机横向距离是否相等，相等就撞过来，后来发现没有意义，因为正常飞机为不被集中或是为了吃到掉落物品不得不保持一直移动，就算与小飞机横坐标相等也只能保持一瞬间，甚至小于paint的刷新频率，因此小飞机几乎不会向前冲，后将小飞机移动前会判断与我的飞机横向距离的绝对值是否小于25，小于25就会向我方飞机冲过来撞击我们，但也发现小飞机被打一下就死，冲过来没有意义，于是增加小飞机血量参数，血量为2，发现游戏难度极大提升。战斗机的移动逻辑是会检测我们的位置，并向我们的位置移动，直至与我们横向坐标相等，这样条件有点苛刻，日后可能会优化成移动到我们位置的左右的随机位置。
 
