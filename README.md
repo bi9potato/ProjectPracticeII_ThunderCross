@@ -30,22 +30,27 @@
 主界面：							      
  <img src="https://github.com/bi9potato/ProjectPracticeII_ThunderCross/blob/main/ScreenShoot/%E4%B8%BB%E7%95%8C%E9%9D%A2.png?raw=true" width="400" height="720" />
 
-注册界面：
+注册界面：  
+
  <img src="https://github.com/bi9potato/ProjectPracticeII_ThunderCross/blob/main/ScreenShoot/%E4%B8%BB%E7%95%8C%E9%9D%A2.png?raw=true" width="400" height="720" />
 
-设置界面：
+设置界面：  
+
  <img src="https://github.com/bi9potato/ProjectPracticeII_ThunderCross/blob/main/ScreenShoot/%E8%AE%BE%E7%BD%AE%E7%95%8C%E9%9D%A2.png?raw=true" width="800" height="400" />
 
 登录成功弹窗：
  <img src="https://github.com/bi9potato/ProjectPracticeII_ThunderCross/blob/main/ScreenShoot/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E5%BC%B9%E7%AA%97.png?raw=true" width="400" height="720" />
 
-进入游戏界面：
+进入游戏界面：  
+
  <img src="https://github.com/bi9potato/ProjectPracticeII_ThunderCross/blob/main/ScreenShoot/%E8%BF%9B%E5%85%A5%E6%B8%B8%E6%88%8F%E7%95%8C%E9%9D%A2.png?raw=true" width="400" height="720" />
 
-游戏界面：
+游戏界面：  
+
  <img src="https://github.com/bi9potato/ProjectPracticeII_ThunderCross/blob/main/ScreenShoot/%E6%B8%B8%E6%88%8F%E7%95%8C%E9%9D%A2.png?raw=true" width="400" height="720" />
  
-结算界面：
+结算界面：  
+
  <img src="https://github.com/bi9potato/ProjectPracticeII_ThunderCross/blob/main/ScreenShoot/%E7%BB%93%E7%AE%97%E7%95%8C%E9%9D%A2.png?raw=true" width="400" height="720" />
 
 
