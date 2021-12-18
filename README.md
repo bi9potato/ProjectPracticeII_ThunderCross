@@ -23,7 +23,7 @@
 
 
 # 二、总体设计方案
->游戏有24个类，分别是：背景类，爆炸类，boss类，boss子弹类，子弹类，大招类，药类，大招盒类，子弹升级类，飞镖子弹类，飞镖子弹升级类，登录界面类，方向类，我的飞机类、敌机子弹类，敌方小飞机类，敌方战斗机类，获取声音类，游戏开始类，主窗体类，用户类，登录类，注册类，运行（测试）类。
+>游戏有'24个类'，分别是：背景类，爆炸类，boss类，boss子弹类，子弹类，大招类，药类，大招盒类，子弹升级类，飞镖子弹类，飞镖子弹升级类，登录界面类，方向类，我的飞机类、敌机子弹类，敌方小飞机类，敌方战斗机类，获取声音类，游戏开始类，主窗体类，用户类，登录类，注册类，运行（测试）类。
 首先构建前端，以及各游戏窗体类，对象类（飞机，掉落物品，子弹），和gameover之后的结算类。其次各组在各自的框架上进行扩充，登录界面扩充注册、登录、设置（更换飞机贴图）按钮，游戏窗体界面扩充暂停，返回和重开按钮，各个对象设计移动规则和各自移动逻辑，结算界面扩充分数登记判定并显示。
 
 # 三、软件流程图
@@ -61,7 +61,7 @@
 # 四、程序及程序段功能分析
 我负责的是本机、战斗机，小飞机类，子弹类，音乐播放类，游戏机制设计。  
 
-音乐播放类：
+## 4.1 音乐播放类：
 功能：  
 
 函数可循环播放一首歌，若读取下一首歌，会停止上一首歌的线程。Boolean参数控制是否允许播放：  
@@ -155,15 +155,15 @@ public class GameSound {
 }
 ```  
 
-我的飞机类：  
-功能：通过键盘WASD与SPACE案件控制飞机移动  
-函数控制单发子弹开火: public void fire()  
-函数控制双发子弹开火: public void doublefire()；  
-函数控制三发飞镖子弹开火: public void dartsfire()；  
-函数控制大招发动: public void superfire()；  
-函数控制本机移动: public void mpMove()；  
-绘制飞机: public void drawMyPlane(Graphics g)；  
-函数构造飞机: public MyPlane(int mp_x, int mp_y, int mp_width, int mp_height,
+## 4.2 我的飞机类：  
+>功能：通过键盘WASD与SPACE案件控制飞机移动  
+>>函数控制单发子弹开火: ```java public void fire()  ```  
+>>函数控制双发子弹开火: public void doublefire()；  
+>>函数控制三发飞镖子弹开火: public void dartsfire()；  
+>>函数控制大招发动: public void superfire()；  
+>>函数控制本机移动: public void mpMove()；  
+>>绘制飞机: public void drawMyPlane(Graphics g)；  
+>>函数构造飞机: public MyPlane(int mp_x, int mp_y, int mp_width, int mp_height,
 int mp_health,int doublefire_num,int dartsfire_num,int superfire_num,
 boolean isLife, GameStart gs)；
 
@@ -400,7 +400,7 @@ boolean isLife, GameStart gs) {
 }
 ```
 
-普通子弹类：  
+## 4.3 普通子弹类：  
 功能：  
 函数构造子弹：public Bullet(int bl_x, int bl_y, int bl_width, int bl_height, boolean isLife, GameStart gs)；  
 函数绘制子弹：public void drawBullet(Graphics g)；  
@@ -513,7 +513,7 @@ public class Bullet {
 }
 ```
 	
-飞镖子弹类：  
+## 4.4 飞镖子弹类：  
 功能：  
 
 函数构造飞镖子弹：public DartsBullet(int dbl_x, int dbl_y, int dbl_width, int dbl_height,
